@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; connect-src 'self' https://api.web3forms.com https://cdn.jsdelivr.net ws://127.0.0.1:5500; img-src 'self' data:;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Abdul Kareem</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="toast-notification" class="toast"></div>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar">
+      <div class="logo">PORT<span class="text-orange">FOLIO</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="btn-nav">Let's Talk</a></li>
+        <li class="theme-switch">
+          <i class="fas fa-sun" id="theme-toggle"></i>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <p class="subtitle">Welcome to my world</p>
+          <h1>Hi, I'm <span class="text-orange">Abdul Kareem</span></h1>
+          <h2>I am a <span class="typing-text"></span></h2>
+          <p class="description">
+            Transforming complex problems into elegant, pixel-perfect solutions.
+            I build scalable web applications with a focus on performance and
+            user experience.
+          </p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">Check my Work</a>
+            <a
+              href="https://github.com/Abdulkareem1007"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/abdulkareem22/"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-circle">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+          <div class="floating-card c1">
+            <i class="fas fa-code"></i>
+            <span>Clean Code</span>
+          </div>
+          <div class="floating-card c2">
+            <i class="fas fa-paint-brush"></i>
+            <span>Creative UI</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="section-subtitle">What I Offer</p>
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card fade-in">
+            <i class="fas fa-laptop-code icon fa-fade"></i>
+            <h3>Web Development</h3>
+            <p>
+              Building fast, responsive websites using modern technologies like
+              React, Vue, and Tailwind CSS.
+            </p>
+          </div>
+          <div class="service-card fade-in">
+            <i class="fas fa-network-wired icon fa-fade"></i>
+            <h3>API Integration</h3>
+            <p>
+              Connecting your website to third-party services like Payment
+              Gateways, Social Media, and Cloud Data.
+            </p>
+          </div>
+          <div class="service-card fade-in">
+            <i class="fas fa-server icon fa-fade"></i>
+            <h3>Backend Solutions</h3>
+            <p>
+              Developing robust APIs and server-side logic using Node.js and
+              SQL/NoSQL databases.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section bg-dark">
+      <div class="container">
+        <p class="section-subtitle">My Portfolio</p>
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="portfolio-grid">
+
+
+          <div class="portfolio-card fade-in">
+            <div class="portfolio-img">
+              <img
+                src="images/project4/IMG3.png"
+                alt="Truth and Dare Game"
+              />
+              <div class="overlay">
+                <a href="https://neontruthdaregame.netlify.app/" target="_blank" class="btn-icon" title="View Live"><i class="fas fa-link"></i></a>
+                <a href="https://github.com/Abdulkareem1007/Projects2.0/tree/main/TruthAndDareV1.0" target="_blank" class="btn-icon" title="View Code"><i class="fab fa-github"></i></a>
+                <a
+                  href="#"
+                  class="btn-icon"
+                  onclick="openModal('project4'); return false;"
+                >
+                  <i class="fa-regular fa-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Truth and Dare Game</h3>
+              <p>
+                Html, CSS, JavaScript, Canvas API, Fetch API, Node.js, Express.js, CORS, Crypto, Render(Deployment)
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-card fade-in">
+            <div class="portfolio-img">
+              <img src="images/project1/landingPage.png" alt="User Dashboard" />
+              <div class="overlay">
+                <a
+                  href="https://neontruthdaregame.netlify.app/"
+                  target="_blank"
+                  class="btn-icon"
+                  title="View Live"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+                <a
+                  href="https://github.com/Abdulkareem1007/TruthAndDare_V1.0"
+                  target="_blank"
+                  class="btn-icon"
+                  title="View Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="#"
+                  class="btn-icon"
+                  onclick="openModal('project1'); return false;"
+                  title="View Gallery"
+                >
+                  <i class="fa-regular fa-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>User Dashboard</h3>
+              <p>React, React Router DOM, Zustand, SweetAlert2, MUI</p>
+            </div>
+          </div>
+
+
+          <div class="portfolio-card fade-in">
+            <div class="portfolio-img">
+              <img
+                src="images/project2/dashboard.png"
+                alt="weather Dashboard"
+              />
+              <div class="overlay">
+                <a
+                  href="https://heartfelt-bienenstitch-5cdd30.netlify.app/"
+                  target="_blank"
+                  class="btn-icon"
+                  title="View Live"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://github.com/Abdulkareem1007/Projects2.0/tree/main/my-weather-app"
+                  target="_blank"
+                  class="btn-icon"
+                  title="View Code"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-icon"
+                  onclick="openModal('project2'); return false;"
+                >
+                  <i class="fa-regular fa-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Weather App</h3>
+              <p>
+                React, React Hooks, Axios, Tailwind, API(Geocoding API, Weather
+                Forecast API, Air Quality API)
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-card fade-in">
+            <div class="portfolio-img">
+              <img src="images/project3/list.png" alt="Todo List App" />
+              <div class="overlay">
+                <a
+                  href="https://keen-sherbet-bd955c.netlify.app"
+                  target="_blank"
+                  class="btn-icon"
+                  title="View Live"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://github.com/Abdulkareem1007/Projects2.0/tree/main/my-todo-app"
+                  target="_blank"
+                  class="btn-icon"
+                  title="View Code"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn-icon"
+                  onclick="openModal('project3'); return false;"
+                >
+                  <i class="fa-regular fa-image"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Todo List App</h3>
+              <p>React, React Hooks, Tailwind, LocalStorage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+
+      <div class="modal-content-wrapper">
+        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <img class="modal-content" id="modalImage" />
+
+        <button class="nav-btn next-btn" onclick="changeSlide(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div id="caption"></div>
+    </div>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-subtitle">My Arsenal</p>
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-wrapper">
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-code"></i> Core Frontend</h3>
+            <div class="skill-box">
+              <div class="skill-item">
+                <i class="fab fa-html5" style="color: #e34c26"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt" style="color: #264de4"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js" style="color: #f7df1e"></i>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+            <div class="skill-box">
+              <div class="skill-item">
+                <i class="fab fa-react" style="color: #61dafb"></i>
+                <span>React.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-wind" style="color: #38bdf8"></i>
+                <span>Tailwind</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-palette" style="color: #007fff"></i>
+                <span>Material UI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-box">
+              <div class="skill-item">
+                <i class="fab fa-node-js" style="color: #68a063"></i>
+                <span>Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-box">
+              <div class="skill-item">
+                <i class="fas fa-database" style="color: #4479a1"></i>
+                <span>SQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-leaf" style="color: #4db33d"></i>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-tools"></i> Tools</h3>
+            <div class="skill-box">
+              <div class="skill-item">
+                <i class="fab fa-git-alt" style="color: #f05032"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github" style="color: #181717"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code-branch" style="color: #007acc"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-robot" style="color: #74aa9c"></i>
+                <span>ChatGPT</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain" style="color: #8e44ad"></i>
+                <span>Gemini</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-magic" style="color: #6e5494"></i>
+                <span>Copilot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+      <div class="container">
+        <p class="section-subtitle">Get in Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-container">
+          <div class="contact-info fade-in">
+            <h3>Let's Work Together</h3>
+            <p>
+              Have a project in mind? Send me a message and let's create
+              something amazing.
+            </p>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>abdulkareem1007@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <span>(+91) - 7488130025</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Delhi, India</span>
+            </div>
+            <div class="contact-socials">
+              <a
+                href="https://github.com/Abdulkareem1007"
+                target="_blank"
+                class="social-icon"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abdulkareem22/"
+                target="_blank"
+                class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank" class="social-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-form fade-in"
+          >
+            <!-- Replace with your Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="fe93c52d-14d7-4a23-9d26-20e7b0e97957"
+            />
+
+            <!-- This will redirect to the same page and clear the form -->
+            <input
+              type="hidden"
+              name="redirect"
+              value="http://127.0.0.1:5500/index.html?submitted=true"
+            />
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" "
+                required
+              />
+              <label for="name" class="floating-label">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" "
+                required
+              />
+              <label for="email" class="floating-label">Your Email</label>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="message" class="floating-label">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary contact-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logo">
+          PORT<span class="text-orange">FOLIO</span>
+        </div>
+        <p>Building the web, one pixel at a time.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Abdulkareem1007" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/abdulkareem22/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <p class="copyright">&copy; 2025 Abdul Kareem. All rights reserved.</p>
+
+        <p class="attribution">
+          <a
+            href="https://www.flaticon.com/free-icons/curriculum-vitae"
+            title="curriculum vitae icons"
+            target="_blank"
+          >
+            Curriculum vitae icons created by Flaticon.
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
