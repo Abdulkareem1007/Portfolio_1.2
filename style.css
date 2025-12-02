@@ -236,7 +236,9 @@ body.light-theme .hamburger {
   height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 60px;
+  /* This padding is crucial to push the content below the fixed navbar.
+     Adjust this value to match your navbar's height. */
+  padding-top: 80px;
 }
 .hero-container {
   display: grid;
