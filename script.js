@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
         if(document.querySelector('.typing-text')) {
             var typed = new Typed('.typing-text', {
-                strings: ['Frontend Developer', 'Freelancer', 'Tech Enthusiast'],
+                strings: ['Developer', 'Freelancer', 'Tech Enthusiast'],
                 typeSpeed: 100,
                 backSpeed: 60,
                 loop: true
